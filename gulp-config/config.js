@@ -41,9 +41,9 @@ const paths = {
         }
     },
     images: {
-        input: 'src/img/**/*.*',
+        input: 'src/images/**/*.*',
         output: 'build/images/',
-        watch: 'src/img/**/*.*',
+        watch: 'src/images/**/*.*',
     },
     fonts: {
         input: 'src/fonts/*.*',

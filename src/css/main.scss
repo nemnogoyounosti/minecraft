@@ -13,7 +13,7 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: $baseFontSize;
 	line-height: 1.3;
-	background: #fff;
+	background: #141111;
 	color: #000;
 }
 
@@ -53,10 +53,9 @@ a[href^="tel"] {
 @import "block/close";
 @import "block/content";
 @import "block/copyright";
-@import "block/desktopMenu";
 @import "block/icon";
 @import "block/logo";
 @import "block/menu";
 @import "block/mobileMenu";
 @import "block/sideBar";
-@import "block/breadcrumbs";
+@import "block/banner";

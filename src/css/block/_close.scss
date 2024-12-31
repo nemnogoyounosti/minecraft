@@ -4,4 +4,9 @@
 	display: block;
 	position: relative;
 	opacity: 1 !important;
+	background-image: url("../../images/icons/close.png");
+	width: 24px;
+	height: 24px;
+	background-size: cover;
+	filter: invert(1);
 }

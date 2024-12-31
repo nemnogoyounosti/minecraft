@@ -1,0 +1,65 @@
+@import "../misc/bootstrap";
+
+.banner{
+  position: relative;
+  background-image: url("../../images/banner.png");
+  background-image: image-set(
+                  url("../../images/banner.webp") type("image/webp") 1x,
+                  url("../../images/banner.png") type("image/png") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-max(lg){
+    min-height: 60vh;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(19, 15, 15, 0) 0%, #141111 90%);
+    position: absolute;
+    z-index: 999;
+  }
+}
+
+.banner-title{
+
+  position: relative;
+  z-index: 1050;
+  text-align: center;
+
+  h1{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 56px;
+
+    @include media-max(lg){
+      font-size: 42px;
+    }
+
+    @include media-max(sm){
+      font-size: 34px;
+    }
+
+    mark{
+      background: transparent;
+      padding: 0;
+      color: #10ab7c;
+    }
+  }
+}
+
+.banner-content {
+  width: 100%;
+}

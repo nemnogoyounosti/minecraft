@@ -1,7 +1,12 @@
 @import "../misc/bootstrap";
 
 .logo {
-
+  background-image: url("../../images/logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 52px;
+  background-size: cover;
 }
 
 

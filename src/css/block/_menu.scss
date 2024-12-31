@@ -1,23 +1,40 @@
 @import "../misc/bootstrap";
 
-.menu-ul {
-	list-style: none;
-	padding: 30px 0 0 55px;
-	margin: 0;
+.menu-flex {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 10px;
 }
 
-.menu-a {
-	font-size: rem(18px);
-	color: white;
-	line-height: 160%;
+.menu-button{
 
-	&:hover {
-		color: #ff0e00;
-		transition: all .2s;
-		text-decoration: none;
+	margin-top: 50px;
+
+	a{
+		display: block;
+		color: #ffffff;
+		border: 2px solid #10ab7c;
+		padding: 10px;
+		border-radius: 30px;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+
+		&:hover{
+			color: white;
+			text-decoration: none;
+		}
 	}
+
 }
 
-.menu-li + .menu-li {
-	padding-top: 15px;
+.menu-social {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
 }

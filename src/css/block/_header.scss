@@ -1,18 +1,81 @@
 @import "../misc/bootstrap";
 
 .header {
-
+	position: relative;
+	z-index: 1060;
 }
 
 .header-content {
 	display: flex;
 	align-items: center;
-	margin-top: 30px;
 	position: relative;
 	z-index: 5;
 	justify-content: space-between;
 }
 
-.header_bottom {
-	margin-bottom: 0;
+.header-left {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.header-button{
+
+	@include media-max(lg){
+		display: none;
+	}
+
+	a{
+		display: block;
+		transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
+		color: #ffffff;
+		border: 2px solid #10ab7c;
+		padding: 10px;
+		border-radius: 30px;
+		font-size: 18px;
+		font-weight: 400;
+
+		&:hover{
+			color: black;
+			background: #10ab7c;
+			transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
+			text-decoration: none;
+		}
+	}
+}
+
+.header-right_telegram{
+
+	position: relative;
+
+	a{
+		background: white;
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.header-right_whatsapp{
+
+	position: relative;
+
+	a{
+		background: white;
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }

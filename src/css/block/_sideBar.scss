@@ -9,7 +9,7 @@
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	z-index: 999;
+	z-index: 1061;
 	transition: .2s;
 }
 
@@ -18,7 +18,7 @@
 	max-width: 100%;
 	height: 100vh;
 	overflow: auto;
-	background-color: #000515;
+	background: #2e2e2e;
 	position: relative;
 }
 
@@ -28,7 +28,6 @@
 }
 
 .sideBar-close {
-	margin-top: 20px;
 	position: relative;
 	overflow: hidden;
 }
