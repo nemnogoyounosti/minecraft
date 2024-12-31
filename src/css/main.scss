@@ -1,0 +1,62 @@
+@import "misc/bootstrap";
+@import "misc/bootstrap-init";
+@import "misc/button";
+@import "misc/text";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet');
+
+html, body {
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: $baseFontSize;
+	line-height: 1.3;
+	background: #fff;
+	color: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*, *:active, *:focus {
+	outline: 0 !important;
+	-moz-outline-style: none !important;
+}
+
+a[href^="tel"] {
+	text-decoration: none;
+	color: inherit;
+	white-space: nowrap;
+}
+
+._noScroll {
+	overflow: hidden;
+}
+
+@font-face {
+	//font-family: 'Roboto Regular';
+	//src: url('/css/fonts/Roboto-Regular.eot');
+	//src: url('/css/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+	//url('/css/fonts/Roboto-Regular.woff') format('woff'),
+	//url('/css/fonts/Roboto-Regular.ttf') format('truetype');
+	//font-weight: normal;
+	//font-style: normal;
+}
+
+@import "block/page";
+@import "block/header";
+@import "block/footer";
+@import "block/burger";
+@import "block/close";
+@import "block/content";
+@import "block/copyright";
+@import "block/desktopMenu";
+@import "block/icon";
+@import "block/logo";
+@import "block/menu";
+@import "block/mobileMenu";
+@import "block/sideBar";
+@import "block/breadcrumbs";

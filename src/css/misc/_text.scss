@@ -1,0 +1,41 @@
+@import "bootstrap";
+
+
+h1, .h1 {
+	font-weight: bold;
+	font-size: clamp(36px, 7vw, 70px);
+	line-height: 130%;
+}
+
+h2, .h2 {
+	font-size: clamp(28px, 4vw, 48px);
+	line-height: 120%;
+	font-weight: bold;
+}
+
+h3, .h3 {
+	font-size: clamp(19px, 4vw, 24px);
+	line-height: 150%;
+	font-weight: bold;
+}
+
+h4, .h4 {
+	font-weight: normal;
+	font-size: clamp(20px, 4vw, 24px);
+	line-height: 150%;
+	color: #8a8a8a;
+}
+
+h5, .h5 {
+	font-weight: bold;
+	font-size: clamp(14px, 4vw, 18px);
+	line-height: 150%;
+}
+
+
+p, .text {
+	font-size: clamp(16px, 4vw, 18px);
+	line-height: 160%;
+	font-style: normal;
+}
+

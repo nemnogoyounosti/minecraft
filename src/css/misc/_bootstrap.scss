@@ -1,0 +1,34 @@
+//@import "../../../node_modules/bootstrap/scss/functions";
+//@import "../../../node_modules/bootstrap/scss/variables";
+
+$grid-breakpoints: (
+		xs: 0,
+		sm: 576px,
+		md: 767px,
+		lg: 992px,
+		xl: 1200px
+);
+
+$baseFontSize: 18px;
+
+@function rem($sizeInPx) {
+	@return $sizeInPx / $baseFontSize * 1rem;
+}
+
+@mixin media-max($name) {
+	@media (max-width: map-get($grid-breakpoints, $name)) {
+		@content;
+	}
+}
+
+@mixin media-min ($name) {
+	@media (min-width: map-get($grid-breakpoints, $name)) {
+		@content;
+	}
+}
+
+@mixin media-between ($nameMin, $nameMax) {
+	@media (max-width: map-get($grid-breakpoints, $nameMax)) AND (min-width: map-get($grid-breakpoints, $nameMin)) {
+		@content;
+	}
+}

@@ -1,0 +1,43 @@
+{
+  "name": "ideaplus_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile1.js",
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ],
+  "scripts": {
+    "dev": "cross-env GULP_ENV='development' gulp",
+    "prod": "cross-env GULP_ENV='production' gulp"
+  },
+  "author": "Kurbatov Evgeny",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@ckeditor/ckeditor5-build-classic": "^34.0.0",
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.27.9",
+    "browserify": "^17.0.0",
+    "ckeditor": "^4.12.1",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-buffer": "^0.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-tap": "^2.0.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.12.1",
+    "jquery": "^3.6.0",
+    "js-cookie": "^3.0.1",
+    "node-sass": "^7.0.1"
+  }
+}

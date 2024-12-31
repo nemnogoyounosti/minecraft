@@ -1,0 +1,19 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.page-header {
+	
+}
+
+.page-content {
+	flex-grow: 2;
+}
+
+.page-footer {
+	
+}
