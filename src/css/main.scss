@@ -2,7 +2,7 @@
 @import "misc/bootstrap-init";
 @import "misc/button";
 @import "misc/text";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 html, body {
 	height: 100%;
@@ -10,7 +10,7 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 	padding: 0;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Comfortaa", serif;
 	font-size: $baseFontSize;
 	line-height: 1.3;
 	background: #141111;
@@ -59,3 +59,6 @@ a[href^="tel"] {
 @import "block/mobileMenu";
 @import "block/sideBar";
 @import "block/banner";
+@import "block/servers";
+@import "block/magazine";
+@import "block/scrollbar";

@@ -1,0 +1,173 @@
+@import "../misc/bootstrap";
+
+.magazine{
+  position: relative;
+  height: auto;
+  margin-top: 100px;
+}
+
+.magazine-block_product{
+  border: 2px solid rgba(255, 255, 255, .4);
+  border-radius: 10px;
+  transition: .2s;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  &:hover{
+    text-decoration: none;
+    color: white;
+    border: 2px solid #10ab7c;
+  }
+
+  &:hover .magazine-block_product__opacity{
+    opacity: 0;
+
+  }
+
+  &:hover .magazine-block_button{
+    opacity: 1;
+
+  }
+
+  h5{
+    font-size: 24px;
+    font-weight: 300;
+    color: #10ab7c;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.magazine-block_img{
+  display: block;
+  text-align: center;
+}
+
+.magazine-block_privilege{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+
+  p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.magazine-block_price{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  p{
+    margin: 0;
+    font-size: 16px;
+  }
+
+  div{
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    background: #10ab7c;
+    border-radius: 10px;
+    padding: 6px 8px 3px;
+  }
+}
+
+.sale {
+  max-width: fit-content;
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  top: 10px;
+  left: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  box-shadow: 0 5px 17px rgba(255, 74, 74, .4);
+}
+
+.sale__size {
+  padding: 6px 10px;
+  background: #ff4a4a;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 16px;
+  font-size: 1em;
+}
+
+.sale__timer {
+  padding-left: 10px;
+  background: #ff5b5b;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-right: 16px;
+  padding-top: 5px;
+
+  div{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.magazine-block_button{
+
+  position: absolute;
+  width: 94%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button{
+    display: block;
+    color: #ffffff;
+    background-color: #10ab7c;
+    border-color: #10ab7c;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 30px;
+
+    &:hover{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.magazine-title{
+
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2{
+    margin: 0;
+    font-size: 56px;
+    color: #10ab7c;
+    font-weight: 500;
+
+    @include media-max(lg){
+      font-size: 42px;
+    }
+
+    @include media-max(sm){
+      font-size: 34px;
+    }
+  }
+}
